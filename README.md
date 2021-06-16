@@ -1,16 +1,19 @@
 # ogamex
 ### This is a project to automate the browser game OgameX
+---
+
 
 ### Features:
+---
 
-#### Expedition BOT: 
+- ####Expedition BOT: 
 
 ### Requirements: 
 
-#### Linux
-#### Python v3
-#### Python packages: 
-`sudo pip3 install pandas selenium beautifulsoup4 requests pyvirtualdisplay xvfbwrapper chromedriver`
+- #### Linux
+- #### Python v3
+- #### Python packages: 
+  `sudo pip3 install pandas selenium beautifulsoup4 requests pyvirtualdisplay xvfbwrapper chromedriver`
 
 ### Configuration of script: 
 
@@ -35,3 +38,4 @@
     - DEATH_STAR
     - FALCON
 
+---
