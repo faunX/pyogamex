@@ -1,38 +1,40 @@
 # OgameX Automation Project 
 ### This is a project developed mostly in Python to automate the game called OgameX which is a browser real time game.
 
-### Features:
+## Features:
 
-    - #### Expedition BOT: 
+1. ## Expedition BOT: 
 
-    ### Requirements: 
+### Requirements: 
 
-    - #### Linux
-    - #### Python v3
-    - #### Python packages: 
-      `sudo pip3 install pandas selenium beautifulsoup4 requests pyvirtualdisplay xvfbwrapper chromedriver`
+- #### Linux
+- #### Python v3
+- #### Python packages: 
+  `sudo pip3 install pandas selenium beautifulsoup4 requests pyvirtualdisplay xvfbwrapper chromedriver`
 
-    ### Configuration of script: 
+### Configuration of script: 
 
-    - Define variables:
-      - **email**: Enter your email
-      - **password**: Enter your password
-      - **expoWaves**: Enter the number of waves you want to send
-      - **shipName**: Enter the name of the ship as detailed
-        - SPY_PROBE
-        - LIGHT_CARGO
-        - HEAVY_CARGO
-        - LIGHT_FIGHTER
-        - HEAVY_FIGHTER
-        - COLONY_SHIP
-        - RECYCLER
-        - CRUISER
-        - BATTLESHIP
-        - BATTLE_CRUISER
-        - DESTROYER
-        - PLANET_BOMBER
-        - REAPER
-        - DEATH_STAR
-        - FALCON
+- Define variables:
+  - **email**: Enter your email
+  - **password**: Enter your password
+  - **expoWaves**: Enter the number of waves you want to send
+  - **shipName**: Enter the name of the ship as detailed
+    - SPY_PROBE
+    - LIGHT_CARGO
+    - HEAVY_CARGO
+    - LIGHT_FIGHTER
+    - HEAVY_FIGHTER
+    - COLONY_SHIP
+    - RECYCLER
+    - CRUISER
+    - BATTLESHIP
+    - BATTLE_CRUISER
+    - DESTROYER
+    - PLANET_BOMBER
+    - REAPER
+    - DEATH_STAR
+    - FALCON
 
 ---
+
+2. ## Dark Matter farmer
