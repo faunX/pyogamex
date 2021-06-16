@@ -1,0 +1,1915 @@
+<html><head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>Vega | OgameX</title>
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/cdn-cgi/apps/head/eWCrlBiTO8hz-4YztbcrFWEq5Ec.js"></script><link rel="shortcut icon" href="/assets/images/favicon.ico">
+<link rel="stylesheet" href="/assets/styles/V2/default.css?v=1480">
+<link rel="stylesheet" href="/assets/styles/V2/app.css?v=1480">
+<script>
+
+
+        window.localization = {};
+        window.localization.dayMark = 'd';
+        window.localization.Yes = 'Yes';
+        window.localization.No = 'No';
+        window.localization.Warning = 'Warning';
+
+
+        window.timeoffset_cookie_name = 'timeZoneOffset';
+        window.currentPlayerName = '123456789';
+        window.currentPlayerId = '4fa777af-1364-4168-a87d-3d9348a75222';
+        window.currentPlanetId = '99c17658-c369-4213-8079-e89bd7127dd7';
+        window.isVacation = false;
+
+        window.currentPlayerClass = null;
+
+        
+        window.currentPlayerClass = 'DISCOVERER';
+        
+
+
+        var resources = {
+            initialMetal:35841396310319300,
+            initialCrystal:23015994586241226,
+            initialDeuterium:1833996274242149,
+            metal: 35841396310319300,
+            crystal: 23015994586241226,
+            deuterium: 1833996274242149,
+            energy: 0,
+            energyConsumption: 0,
+            darkmatter: 184165,
+            metalProduction: 0,
+            crystalProduction: 0,
+            deuteriumProduction: 0,
+            metalStorageCapacity: 10000000.000000,
+            crystalStorageCapacity: 10000000.000000,
+            deuteriumStorageCapacity: 10000000.000000
+        };
+
+        var initialServerTime = 1623875764000;
+        var currentServerTime = 1623875764000;
+
+        var lang = 'en';
+
+    </script>
+<script src="/assets/js/default.js?v=1480"></script><style>@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-shown{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;box-shadow:0 0 .625em #d9d9d9;overflow-y:hidden}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:initial;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon-text{font-size:2em;font-weight:700;line-height:1em}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 .0625em #fff,0 0 0 .125em rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:2em;height:2.8125em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.25em;left:-.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 2em;transform-origin:0 2em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:showSweetToast .5s;animation:showSweetToast .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:hideSweetToast .2s forwards;animation:hideSweetToast .2s forwards}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:animate-toast-success-tip .75s;animation:animate-toast-success-tip .75s}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:animate-toast-success-long .75s;animation:animate-toast-success-long .75s}@-webkit-keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@-webkit-keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-shown{top:auto;right:auto;bottom:auto;left:auto;background-color:transparent}body.swal2-no-backdrop .swal2-shown>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-shown.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-top-left,body.swal2-no-backdrop .swal2-shown.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-top-end,body.swal2-no-backdrop .swal2-shown.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-shown.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-left,body.swal2-no-backdrop .swal2-shown.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-end,body.swal2-no-backdrop .swal2-shown.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom-left,body.swal2-no-backdrop .swal2-shown.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swal2-shown.swal2-bottom-right{right:0;bottom:0}.swal2-container{display:flex;position:fixed;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:10px;background-color:transparent;z-index:1060;overflow-x:hidden;-webkit-overflow-scrolling:touch}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-container.swal2-fade{transition:background-color .1s}.swal2-container.swal2-shown{background-color:rgba(0,0,0,.4)}.swal2-popup{display:none;position:relative;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem;box-sizing:border-box}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-popup .swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-popup .swal2-title{display:block;position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-popup .swal2-actions{flex-wrap:wrap;align-items:center;justify-content:center;margin:1.25em auto 0;z-index:1}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-confirm{width:2.5em;height:2.5em;margin:.46875em;padding:0;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;box-sizing:border-box;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-popup .swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{display:inline-block;width:15px;height:15px;margin-left:5px;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff;content:'';-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal}.swal2-popup .swal2-styled{margin:.3125em;padding:.625em 2em;font-weight:500;box-shadow:none}.swal2-popup .swal2-styled:not([disabled]){cursor:pointer}.swal2-popup .swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled:focus{outline:0;box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(50,100,150,.4)}.swal2-popup .swal2-styled::-moz-focus-inner{border:0}.swal2-popup .swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-popup .swal2-image{max-width:100%;margin:1.25em auto}.swal2-popup .swal2-close{position:absolute;top:0;right:0;justify-content:center;width:1.2em;height:1.2em;padding:0;transition:color .1s ease-out;border:none;border-radius:0;outline:initial;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer;overflow:hidden}.swal2-popup .swal2-close:hover{-webkit-transform:none;transform:none;color:#f27474}.swal2-popup>.swal2-checkbox,.swal2-popup>.swal2-file,.swal2-popup>.swal2-input,.swal2-popup>.swal2-radio,.swal2-popup>.swal2-select,.swal2-popup>.swal2-textarea{display:none}.swal2-popup .swal2-content{justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:300;line-height:normal;z-index:1;word-wrap:break-word}.swal2-popup #swal2-content{text-align:center}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-radio,.swal2-popup .swal2-select,.swal2-popup .swal2-textarea{margin:1em auto}.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-textarea{width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;font-size:1.125em;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);box-sizing:border-box}.swal2-popup .swal2-file.swal2-inputerror,.swal2-popup .swal2-input.swal2-inputerror,.swal2-popup .swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-popup .swal2-file:focus,.swal2-popup .swal2-input:focus,.swal2-popup .swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-popup .swal2-file::-webkit-input-placeholder,.swal2-popup .swal2-input::-webkit-input-placeholder,.swal2-popup .swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-popup .swal2-file:-ms-input-placeholder,.swal2-popup .swal2-input:-ms-input-placeholder,.swal2-popup .swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::-ms-input-placeholder,.swal2-popup .swal2-input::-ms-input-placeholder,.swal2-popup .swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::placeholder,.swal2-popup .swal2-input::placeholder,.swal2-popup .swal2-textarea::placeholder{color:#ccc}.swal2-popup .swal2-range input{width:80%}.swal2-popup .swal2-range output{width:20%;font-weight:600;text-align:center}.swal2-popup .swal2-range input,.swal2-popup .swal2-range output{height:2.625em;margin:1em auto;padding:0;font-size:1.125em;line-height:2.625em}.swal2-popup .swal2-input{height:2.625em;padding:0 .75em}.swal2-popup .swal2-input[type=number]{max-width:10em}.swal2-popup .swal2-file{font-size:1.125em}.swal2-popup .swal2-textarea{height:6.75em;padding:.75em}.swal2-popup .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;color:#545454;font-size:1.125em}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-radio{align-items:center;justify-content:center}.swal2-popup .swal2-checkbox label,.swal2-popup .swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-popup .swal2-checkbox input,.swal2-popup .swal2-radio input{margin:0 .4em}.swal2-popup .swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;background:#f0f0f0;color:#666;font-size:1em;font-weight:300;overflow:hidden}.swal2-popup .swal2-validation-message::before{display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center;content:'!';zoom:normal}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}.swal2-icon{position:relative;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;line-height:5em;cursor:default;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;zoom:normal}.swal2-icon-text{font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;top:-.25em;left:-.25em;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%;z-index:2;box-sizing:content-box}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);z-index:1}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;height:.3125em;border-radius:.125em;background-color:#a5dc86;z-index:2}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-progresssteps{align-items:center;margin:0 0 1.25em;padding:0;font-weight:600}.swal2-progresssteps li{display:inline-block;position:relative}.swal2-progresssteps .swal2-progresscircle{width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center;z-index:20}.swal2-progresssteps .swal2-progresscircle:first-child{margin-left:0}.swal2-progresssteps .swal2-progresscircle:last-child{margin-right:0}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep{background:#3085d6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progresscircle{background:#add8e6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progressline{background:#add8e6}.swal2-progresssteps .swal2-progressline{width:2.5em;height:.4em;margin:0 -1px;background:#3085d6;z-index:10}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-show.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-hide.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-animate-success-icon .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-animate-error-icon{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-animate-error-icon .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:initial!important}}</style>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-129483287-5"></script>
+<script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-129483287-5');
+            </script>
+</head>
+<body>
+<div id="tooltip-container"></div>
+<div id="tooltip-sticky-container"></div>
+<div id="tooltip-static-container"></div>
+<div id="game-bg">
+<div id="game-container">
+<div id="header" style="background:url(../assets/images/V2/header_v3.png) no-repeat center;background-position-y:40px;">
+<div class="top-nav">
+<div class="left-side">
+<a href="/statistics" class="nav-link fa fa-signal tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Statistics</h3>"></a>
+<a href="/halloffame" class="nav-link fa fa-trophy tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Hall of fame</h3>"></a>
+<a href="/records" class="nav-link fa fa-award tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Records</h3>"></a>
+<a href="/chat/universal" class="nav-link fa fa-comments tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Universal Chat</h3>"></a>
+<a href="https://discord.gg/q62NzvHNPJ" target="_blank" class="nav-link fab fa-discord tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Discord channel</h3>"></a>
+<a href="/SupportTicket/SupportTicketList" class="nav-link fa fa-headset tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Support</h3>"></a>
+<a href="https://forum.ogamex.net" target="_blank" class="nav-link fas fa-scroll tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Forum</h3>"></a>
+</div>
+<div class="center-side">
+<a href="/"><img class="logo" src="../../assets/images/V2/logo.png"></a>
+</div>
+<div class="right-side">
+<a href="https://ogamex.net/home/rules" class="nav-link fas fa-book tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Rules</h3>"></a>
+<a href="/friendsenemies" class="nav-link fa fa-users tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Friends &amp; Enemies</h3>"></a>
+<a href="#" class="nav-link fa fa-search tooltip" data-ajax-modal="" data-modal-title="" data-modal-url="/home/search" data-modal-size="large" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Search</h3>"></a>
+<a href="/bannedplayers" class="nav-link fa fa-user-slash tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Banned players</h3>"></a>
+<a href="/settings" class="nav-link fa fa-tools tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Settings</h3>"></a>
+<a href="/home/logout" class="nav-link fa fa-sign-out-alt tooltip" data-tooltip-position="bottom" data-tooltip-content="<h3 style='font-size:11px;padding:3px 10px;'>Log out</h3>"></a>
+</div>
+</div>
+<div class="resources-section">
+<div class="resources-content">
+<a href="/resource" class="resource-item resource-item-metal tooltip" data-tooltip-position="bottom" data-tooltip-content="<div class='player-level-info-tooltip'><table style='max-width:320px;'><tr><td colspan='2' style='font-size: 12px;font-weight: bold;text-align:center;color:#f1f1f1;'>Metal</td></tr><tr><td>Available : </td><td style='font-size: 11px;font-weight: bold;text-align:right;color:#CCC;'>35.841.396.310.319.300</td></tr><tr><td>Production per hour : </td><td><span>0</span></td></tr><tr><td>Production per day : </td><td><span>0</span></td></tr><tr><td>Storage capacity : </td><td><span>10.000.000</span></td></tr></table></div>">
+<span class="resource-icon resource-icon-metal"></span>
+<div style="position:absolute;width:116px;top:18px;left:56px;text-align:left;">
+<span class="resource-amount">
+<span style="position:absolute;font-size: 10px;font-weight: bold;color: #b3c8e1;top: -16px;left: 0px;">Metal</span>
+<span id="metal-amount" style="color:#F00;font-size:10px;">35.841.396.310.319.300</span>
+</span>
+</div>
+</a>
+<a href="/resource" class="resource-item resource-item-crystal tooltip" data-tooltip-position="bottom" data-tooltip-content="<div class='player-level-info-tooltip'><table style='max-width:320px;'><tr><td colspan='2' style='font-size: 12px;font-weight: bold;text-align:center;color:#f1f1f1;'>Crystal</td></tr><tr><td>Available : </td><td style='font-size: 11px;font-weight: bold;text-align:right;color:#CCC;'>23.015.994.586.241.226</td></tr><tr><td>Production per hour : </td><td><span>0</span></td></tr><tr><td>Production per day : </td><td><span>0</span></td></tr><tr><td>Storage capacity : </td><td><span>10.000.000</span></td></tr></table></div>">
+<span class="resource-icon resource-icon-crystal"></span>
+<div style="position:absolute;width:116px;top:18px;left:56px;text-align:left;">
+<span class="resource-amount">
+<span style="position:absolute;font-size: 10px;font-weight: bold;color: #b3c8e1;top: -16px;left: 0px;">Crystal</span>
+<span id="crystal-amount" style="color:#F00;font-size:10px;">23.015.994.586.241.224</span>
+</span>
+</div>
+</a>
+<a href="/resource" class="resource-item resource-item-deuterium tooltip" data-tooltip-position="bottom" data-tooltip-content="<div class='player-level-info-tooltip'><table style='max-width:320px;'><tr><td colspan='2' style='font-size: 12px;font-weight: bold;text-align:center;color:#f1f1f1;'>Deuterium</td></tr><tr><td>Available : </td><td style='font-size: 11px;font-weight: bold;text-align:right;color:#CCC;'>1.833.996.274.242.149</td></tr><tr><td>Production per hour : </td><td><span>0</span></td></tr><tr><td>Production per day : </td><td><span>0</span></td></tr><tr><td>Storage capacity : </td><td><span>10.000.000</span></td></tr></table></div>">
+<span class="resource-icon resource-icon-deuterium"></span>
+<div style="position:absolute;width:116px;top:18px;left:56px;text-align:left;">
+<span class="resource-amount">
+<span style="position:absolute;font-size: 10px;font-weight: bold;color: #b3c8e1;top: -16px;left: 0px;">Deuterium</span>
+<span id="deuterium-amount" style="color:#F00;font-size:10px;">1.833.996.274.242.149</span>
+</span>
+</div>
+</a>
+<a href="/resource" class="resource-item resource-item-energy tooltip" data-tooltip-position="bottom" data-tooltip-content="<div class='player-level-info-tooltip'><table style='max-width:320px;'><tr><td colspan='2' style='font-size: 12px;font-weight: bold;text-align:center;color:#f1f1f1;'>Energy</td></tr><tr><td>Energy production : </td><td><span>0</span></td></tr><tr><td>Energy consumption : </td><td><span style='color:#dc0606;'>0</span></td></tr></table></div>">
+<span class="resource-icon resource-icon-energy"></span>
+<div style="position: absolute;top: 18px;width: 116px;left: 56px;text-align: left;">
+<span style="position:absolute;font-size: 10px;font-weight: bold;color: #b3c8e1;top: -10px;left: 0px;">Energy</span>
+<span class="resource-amount" style="color:#0f0 !important;font-size:10px;">0</span>
+</div>
+</a>
+<a href="/darkmatter/purchase" class="resource-item right-item resource-item-darkmatter tooltip" data-tooltip-position="bottom" data-tooltip-content="<div class='player-level-info-tooltip'><table style='max-width:320px;'><tr><td colspan='2' style='font-size: 12px;font-weight: bold;text-align:center;color:#f1f1f1;border:none;'>Dark matter</td></tr></table></div>">
+<span class="resource-icon resource-icon-darkmatter" style="right: 6px !important;left: unset !important;top: 5px !important;"></span>
+<span style="position:absolute;font-size: 10px;font-weight: bold;color: #b3c8e1;top: 8px;right: 56px;">Dark matter</span>
+<span class="resource-amount" style="position: absolute;top: 24px;width: 116px;right: 58px;text-align: right;font-size: 11px;font-weight: bold;">184.165</span>
+</a>
+<a href="/wiki" class="resource-item right-item resource-item-wiki tooltip" data-tooltip-position="bottom" data-tooltip-content="<div class='player-level-info-tooltip'><table style='max-width:320px;'><tr><td colspan='2' style='font-size: 12px;font-weight: bold;text-align:center;color:#f1f1f1;border:none;'>Wiki</td></tr></table></div>">
+<span class="resource-icon resource-icon-wiki" style="right: 6px !important;left: unset !important;top: 5px !important;"></span>
+<span style="position: absolute;font-size: 12px;font-weight: bold;color: #b0c0d5;top: 16px;right: 44px;">Wiki</span>
+</a>
+</div>
+</div>
+<div class="messages-section">
+<a href="/messages" class="messages-button tooltip" data-tooltip-position="bottom" data-tooltip-content="<div style='font-size:11px;'>Unread messages (0)</div>">
+</a>
+<a href="/chat" class="chat-button tooltip" data-tooltip-position="bottom" data-tooltip-content="<div style='font-size:11px;'>Unread chat messages (0)</div>">
+</a>
+</div>
+<div class="fleet-info-section ">
+<div style="cursor:pointer;text-align:left;padding-left:20px;" id="fleet-movement-detail-btn">
+<div style="padding:4px;color:#FFF;font-size:11px;">
+<span><b>3</b> Missions: </span>
+<span style="color:#9C0;">3 Own</span>
+</div>
+<div style="padding:4px;font-size:11px;color:#FFF;width:50%;float:left;">
+<span>
+Next: <span id="NextMissionRemainingTime">00:56</span>
+</span>
+</div>
+<div style="padding:4px;font-size:11px;color:#FFF;width:50%;float:left;">
+<span>Type:</span>
+<span style="color:#9C0;">Recycle</span>
+</div>
+</div>
+</div>
+<div id="system-clock">16.06.2021 17:36:05</div>
+<div id="user-profile-section">
+<div class="avatar-box player_class_DISCOVERER tooltip" data-tooltip-position="top" data-tooltip-content="<div style='font-size:11px;'>Discoverer</div>"></div>
+<div class="player-name">123456789</div>
+</div>
+</div>
+<div id="game-bottom" style="float:left;width:1000px;">
+<div style="float:left;width:100%;position:relative;margin-top:5px;">
+<div id="left-menu-1">
+<div class="menu-item ">
+<a href="/home" class="text-item">Overview</a>
+</div>
+<div class="menu-item btn-planet-debris ">
+<a href="/planetdebris" class="text-item">Planet debris</a>
+</div>
+<div class="menu-item ">
+<a href="/building/facility" class="text-item">Facilities</a>
+</div>
+<div class="menu-item ">
+<a href="/building/jumpgate" class="text-item">Jump Gate</a>
+</div>
+<div class="menu-item ">
+<a href="/research" class="text-item">Research</a>
+</div>
+<div class="menu-item ">
+<a href="/hangar" class="text-item">Shipyard</a>
+</div>
+<div class="menu-item ">
+<a href="/defense" class="text-item">Defense</a>
+</div>
+<div class="menu-item ">
+<a href="/fleet" class="text-item">Fleet</a>
+</div>
+<div class="menu-item active">
+<a href="/galaxy" class="text-item">Galaxy</a>
+</div>
+<div class="menu-item ">
+<a href="/alliance" class="text-item">Alliance</a>
+</div>
+<div class="menu-item">
+<a href="/empire" target="_blank" class="text-item">Empire</a>
+</div>
+<div class="menu-item ">
+<a href="/officer" class="text-item">Officers</a>
+</div>
+<div class="menu-item ">
+<a href="/academy" class="text-item">Academy</a>
+</div>
+<div class="menu-item ">
+<a href="/merchant" class="text-item premium-text">Merchant</a>
+</div>
+<div class="menu-item ">
+<a href="/premium" class="text-item premium-text">Premiums</a>
+</div>
+<div class="menu-item ">
+<a href="/shop" class="text-item premium-text">Shop</a>
+</div>
+<div class="menu-item ">
+<a href="/shop/inventory" class="text-item">Inventory</a>
+</div>
+<div class="menu-item ">
+<a href="/simulator" class="text-item">Simulators</a>
+</div>
+<div class="menu-item">
+<a href="/darkmatter/promote" class="text-item" style="color:#4caf50;">Promote Server</a>
+</div>
+</div>
+<div id="content-wrapper" class="playerHasMoons">
+<div id="layoutFleetMovements" class="fleet-movement-wrapper">
+<div class="header">
+<span class="title">Events</span>
+</div>
+<div class="content" id="fleet-movement-content"></div>
+<div class="footer"></div>
+</div>
+<script>
+
+    window.localization.addEnemySuccess = "The player has been added to your enemy list.";
+    window.localization.missileSentSuccess = "Missiles have been sent.";
+
+</script>
+<style>
+
+    #galaxy-container {
+        width: 660px;
+        color: #DDD;
+        background-color: rgba(0,0,0,0.2);
+        /*background-color: rgb(12,18,26);*/
+        border: 1px solid rgb(43,63,90);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+        #galaxy-container .galaxy {
+            min-height: 180px;
+            overflow: hidden;
+            min-height: 240px;
+            position: relative;
+            /*border: 1px solid #000;*/
+        }
+
+            #galaxy-container .galaxy .galaxy-route {
+                float: left;
+                width: 100%;
+                /*padding: 2px 10px;*/
+                background-color: #141e26;
+                border-bottom: 1px solid rgb(43,63,90);
+            }
+
+                #galaxy-container .galaxy .galaxy-route .btn-route {
+                    min-width: 40px;
+                    float: left;
+                    text-decoration: none;
+                    background-color: #090a0b;
+                    color: #EEE;
+                    text-align: center;
+                    border-radius: 3px;
+                    line-height: 20px;
+                    font-size: 11px;
+                    /* margin-left: 10px;*/
+                }
+
+                #galaxy-container .galaxy .galaxy-route .route-item {
+                    float: left;
+                    /*margin-left: 20px;*/
+                    padding: 2px 8px;
+                    border: 1px solid rgb(43,63,90);
+                }
+
+                    #galaxy-container .galaxy .galaxy-route .route-item .route-title {
+                        float: left;
+                        font-size: 11px;
+                        line-height: 20px;
+                    }
+
+                    #galaxy-container .galaxy .galaxy-route .route-item a {
+                        line-height: 20px;
+                        font-size: 20px;
+                        float: left;
+                        margin: 0px 2px;
+                        text-decoration: none;
+                        color: #30ba44;
+                        background-color: #090a0b;
+                        border-radius: 3px;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-route .route-item a.left-arrow {
+                            padding: 0px 8px 0px 5px;
+                        }
+
+                        #galaxy-container .galaxy .galaxy-route .route-item a.right-arrow {
+                            padding: 0px 5px 0px 8px;
+                        }
+
+
+                    #galaxy-container .galaxy .galaxy-route .route-item .route-input {
+                        max-width: 30px;
+                        font-size: 11px;
+                        line-height: 20px;
+                        height: 20px;
+                        float: left;
+                        outline: none;
+                        border: none;
+                        padding: 0px 5px;
+                        background-color: #1f2c3f;
+                        color: #CCC;
+                        text-align: center;
+                        border-radius: 3px;
+                    }
+
+                #galaxy-container .galaxy .galaxy-route a:hover {
+                    background-color: rgba(255,255,255,0.2);
+                }
+
+            #galaxy-container .galaxy .btnFilter {
+                width: 20px;
+                float: left;
+                text-decoration: none;
+                background-color: #090a0b;
+                color: #EEE;
+                text-align: center;
+                border-radius: 3px;
+                line-height: 20px;
+                font-size: 11px;
+                margin: 3px 2px;
+                padding: 0px 5px 0px 5px;
+            }
+
+                #galaxy-container .galaxy .btnFilter:hover, #galaxy-container .galaxy .btnFilter.active {
+                    background-color: rgba(255,255,255,0.2);
+                }
+
+
+
+            #galaxy-container .galaxy .galaxy-content {
+                float: left;
+                width: 100%;
+                position: relative;
+                min-height: 500px;
+            }
+
+                #galaxy-container .galaxy .galaxy-content .fleet-info {
+                    float: left;
+                    width: 100%;
+                    min-height: 30px;
+                    padding: 4px;
+                    background-color: #10181f;
+                }
+
+                    #galaxy-container .galaxy .galaxy-content .fleet-info .fleet-item {
+                        float: left;
+                        padding: 0px 10px 0px 0px;
+                        background-color: rgba(255,255,255,0.1);
+                        border-radius: 6px;
+                        margin-right: 15px;
+                        cursor: pointer;
+                        overflow: hidden;
+                        border: 1px solid #333;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .fleet-info .fleet-item .fleet-img {
+                            max-width: 24px;
+                            max-height: 24px;
+                            float: left;
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .fleet-info .fleet-item .fleet-quantity {
+                            font-size: 10px;
+                            line-height: 24px;
+                            text-align: center;
+                            float: left;
+                            margin-left: 10px;
+                        }
+
+                    #galaxy-container .galaxy .galaxy-content .fleet-info .fleet-slots {
+                        float: right;
+                        margin-right: 0px;
+                    }
+
+                    #galaxy-container .galaxy .galaxy-content .fleet-info .btn-legend {
+                        line-height: 20px;
+                        font-size: 16px;
+                        float: left;
+                        margin: 0px 5px;
+                        text-decoration: none;
+                        color: #ff9800;
+                        background-color: #090a0b;
+                        border-radius: 6px;
+                        padding: 3px 10px;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .fleet-info .btn-legend:hover {
+                            background-color: rgba(255,255,255,0.2);
+                        }
+
+                #galaxy-container .galaxy .galaxy-content .galaxy-info {
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 2px;
+                }
+
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item {
+                        float: left;
+                        width: 100%;
+                        height: 28px;
+                        position: relative;
+                        margin-top: 1px;
+                        margin-bottom: 1px;
+                        overflow: hidden;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item:hover {
+                            background-color: rgba(255,255,255,0.1);
+                        }
+
+                        /*#galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item:nth-child(odd) {
+                            background-color: rgba(255,255,255,0.03);
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item:nth-child(even) {
+                            background-color: rgba(255,255,255,0.02);
+                        }*/
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item.galaxy-item-head {
+                            /*padding: 2px 0px;*/
+                            font-size: 11px;
+                            font-weight: 700;
+                            background-color: #10181f;
+                            margin: 0px;
+                            height: 20px;
+                            border-bottom: 1px solid rgb(43,63,90);
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .col-planet-index {
+                            width: 70px;
+                            padding: 1px 2px !important;
+                            position: relative;
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .col-planet-name {
+                            width: 136px;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            margin: 0px 2px;
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .col-moon {
+                            width: 45px;
+                            position: relative;
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .col-debris {
+                            width: 45px;
+                            position: relative;
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .col-player {
+                            width: 160px;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            margin: 0px 2px;
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .col-alliance {
+                            width: 80px;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            margin: 0px 2px;
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .col-action {
+                            width: 106px;
+                            text-align: right !important;
+                            position: relative;
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .header-col.col-action {
+                            text-align: center !important;
+                        }
+
+                        /*#galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .col-action a {
+                                color: #CCC;
+                                text-decoration: none;
+                                line-height: 30px;
+                                font-size: 16px;
+                                margin-left: 5px;
+                                margin-right: 5px;
+                            }
+
+                                #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .col-action a:hover {
+                                    color: #FFF;
+                                    text-decoration: underline;
+                                }*/
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .galaxy-col {
+                            float: left;
+                            padding: 0px 2px;
+                            height: 28px;
+                            text-align: center;
+                            border-radius: 5px;
+                        }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .galaxy-item .header-col {
+                            background-color: rgba(0,0,0,0);
+                            height: unset !important;
+                            line-height: 20px !important;
+                            padding: 0px !important;
+                        }
+
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .planet-index {
+                        font-size: 10px;
+                        font-weight: 600;
+                        /* line-height: 30px; */
+                        /* padding: 0px 5px; */
+                        color: #cfcbc2;
+                        float: left;
+                        width: 30px;
+                        background-color: rgba(0,0,0,0.5);
+                        height: 28px;
+                        line-height: 28px;
+                        border-radius: 5px;
+                    }
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .text-area {
+                        font-size: 11px;
+                        line-height: 28px;
+                        /*padding: 5px;*/
+                        color: #cfcbc2;
+                        /* background-color: rgba(0, 0, 0, 0.5); */
+                        /*border-radius: 5px;*/
+                        /* width: 100%; */
+                        /* display: block; */
+                        /* float: left; */
+                        /* height: 26px; */
+                        margin: 2px;
+                        cursor: pointer;
+                    }
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .col-planet-name .btnEmptyColonize {
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        cursor: pointer;
+                        margin-top: 4px;
+                        background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -132px 0px no-repeat;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .col-planet-name .btnEmptyColonize:hover {
+                            background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -132px -16px no-repeat;
+                        }
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .col-planet-name .btnEmptyRelocate {
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        cursor: pointer;
+                        margin-top: 4px;
+                        margin-left: -3px;
+                        background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -149px 0px no-repeat;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .col-planet-name .btnEmptyRelocate:hover {
+                            background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -149px -16px no-repeat;
+                        }
+
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionSpy {
+                        position: absolute;
+                        left: 5px;
+                        top: 6px;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        cursor: pointer;
+                        background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -84px 0px no-repeat;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionSpy:hover {
+                            background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -84px -16px no-repeat;
+                        }
+
+                    /*#galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionMessage {
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        cursor: pointer;
+                        margin: 4px -1px 0px -1px;
+                        background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -116px 0px no-repeat;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionMessage:hover {
+                            background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -116px -16px no-repeat;
+                        }*/
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionMissile {
+                        position: absolute;
+                        left: 25px;
+                        top: 6px;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        cursor: pointer;
+                        background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -100px 0px no-repeat;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionMissile:hover {
+                            background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -100px -16px no-repeat;
+                        }
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionPlunder {
+                        position: absolute;
+                        left: 45px;
+                        top: 6px;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        cursor: pointer;
+                        background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -210px 0px no-repeat;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionPlunder:hover {
+                            background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -210px -16px no-repeat;
+                        }
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionDestroy {
+                        position: absolute;
+                        left: 65px;
+                        top: 6px;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        cursor: pointer;
+                        background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -226px 0px no-repeat;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionDestroy:hover {
+                            background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -226px -16px no-repeat;
+                        }
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionSavePlanet {
+                        position: absolute;
+                        left: 85px;
+                        top: 6px;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        cursor: pointer;
+                        background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -178px 0px no-repeat;
+                    }
+
+                        #galaxy-container .galaxy .galaxy-content .galaxy-info .col-action .btnActionSavePlanet:hover {
+                            background: url(../../assets/images/V2/galaxy-icon-kit.gif?v=5) -178px -16px no-repeat;
+                        }
+
+                    #galaxy-container .galaxy .galaxy-content .galaxy-info .planet-img {
+                        float: left;
+                        width: 26px;
+                        height: 26px;
+                        border-radius: 13px;
+                        cursor: pointer;
+                        margin-left: 5px;
+                        /*background: url(../../assets/images/planet/11/11_small.png?v=2)no-repeat;*/
+                        background-size: cover !important;
+                        position: relative;
+                        cursor: pointer;
+                    }
+
+            #galaxy-container .galaxy .msg-box {
+                float: left;
+                width: 100%;
+                background-color: #10181f;
+                padding: 0px 10px;
+            }
+
+                #galaxy-container .galaxy .msg-box .msg-item {
+                    float: left;
+                    width: 100%;
+                    font-size: 11px;
+                    line-height: 15px;
+                    padding: 0px 4px;
+                }
+
+                    #galaxy-container .galaxy .msg-box .msg-item.success {
+                        color: #9C0;
+                    }
+
+                    #galaxy-container .galaxy .msg-box .msg-item.fail {
+                        color: #dc0606;
+                    }
+
+
+
+    .galaxy-shortcut-action {
+        text-decoration: none;
+        font-size: 11px;
+        color: #ffd92d;
+        /*display: block;*/
+        margin: 3px;
+    }
+
+        .galaxy-shortcut-action:hover {
+            text-decoration: underline;
+            color: #9C0;
+        }
+
+
+    #galaxy-container .btn-expedition {
+        width: 264px;
+        float: left;
+        text-decoration: none;
+        background-color: #090a0b;
+        color: #EEE;
+        text-align: center;
+        border-radius: 5px;
+        line-height: 24px;
+        font-size: 11px;
+        margin-left: 2px;
+        padding: 0px 10px;
+    }
+
+        #galaxy-container .btn-expedition:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+
+    #galaxy-container .fleetActionIcon {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        bottom: 0px;
+        right: 0px;
+    }
+
+        #galaxy-container .fleetActionIcon.fleetActionFriendly {
+            background: url(../../assets/images/galaxy-icon-kit.gif?v=3) -166px 0px no-repeat;
+        }
+
+        #galaxy-container .fleetActionIcon.fleetActionHostile {
+            background: url(../../assets/images/galaxy-icon-kit.gif?v=3) -166px -12px no-repeat;
+        }
+
+
+    #galaxy-container .isHonourable {
+        color: #ff6 !important;
+    }
+
+    #galaxy-container .isNoob {
+        color: #00ff00 !important;
+    }
+
+    #galaxy-container .isStrong {
+        color: #F00 !important;
+    }
+
+    #galaxy-container .isInactive7 {
+        color: #6e6e6e !important;
+    }
+
+    #galaxy-container .isInactive28 {
+        color: #4f4f4f !important;
+    }
+
+    #galaxy-container .isVacation {
+        color: #00ffff !important;
+    }
+
+    #galaxy-container .isProtection {
+        color: #FF9800 !important;
+    }
+
+    #galaxy-container .isBanned {
+        text-decoration: line-through !important;
+        font-style: italic !important;
+    }
+
+    #galaxy-container .galaxy-content.filterEmpty .galaxy-item.filterEmpty .galaxy-col:not(.col-debris) {
+        opacity: 0.2 !important;
+    }
+
+    #galaxy-container .galaxy-content.filterInactive .galaxy-item.filterInactive .galaxy-col:not(.col-debris) {
+        opacity: 0.2 !important;
+    }
+
+    #galaxy-container .galaxy-content.filterWeak .galaxy-item.filterWeak .galaxy-col:not(.col-debris) {
+        opacity: 0.2 !important;
+    }
+
+    #galaxy-container .galaxy-content.filterStrong .galaxy-item.filterStrong .galaxy-col:not(.col-debris) {
+        opacity: 0.2 !important;
+    }
+
+    #galaxy-container .galaxy-content.filterVacation .galaxy-item.filterVacation .galaxy-col:not(.col-debris) {
+        opacity: 0.2 !important;
+    }
+</style>
+<div id="galaxy-container">
+<div class="galaxy">
+<div class="galaxy-route">
+<div id="galaxyRoute" class="route-item">
+<span class="route-title">Galaxy : </span>
+<a id="btnGalaxyLeft" href="#" class="fas fa-caret-left left-arrow"></a>
+<input type="text" id="galaxyInput" class="route-input" value="3" autocomplete="off" tabindex="101" max-value="5">
+<a id="btnGalaxyRight" href="#" class="fas fa-caret-right right-arrow"></a>
+</div>
+<div id="systemRoute" class="route-item">
+<span class="route-title">System : </span>
+<a id="btnSystemLeft" href="#" class="fas fa-caret-left left-arrow"></a>
+<input type="text" id="systemInput" class="route-input" value="10" autocomplete="off" tabindex="102" max-value="499">
+<a id="btnSystemRight" href="#" class="fas fa-caret-right right-arrow"></a>
+</div>
+<div style="float:left;padding:2px;border:1px solid rgb(43,63,90);border-right: 2px solid rgb(43,63,90);">
+<a href="#" class="btn-route x-btn-go">Go</a>
+</div>
+<div style="float:right;padding:2px;border:1px solid rgb(43,63,90);border-left:2px solid rgb(43,63,90);">
+<a href="/galaxy/savedplanets" class="btn-route" style="padding:0px 10px;border-radius:0px;color: #0A0;font-weight: bold;">Saved planets</a>
+</div>
+</div>
+<div class="galaxy-content     " id="galaxyContent">
+<div id="BackGroundFreezerPreloader_Element" class="BackGroundFreezer_Element" align="center"><div class="loader"></div></div></div>
+<div class="msg-box">
+</div>
+<div class="bottom-info"></div>
+</div>
+</div>
+<script>
+
+    var pendingForNextAction = false;
+    var spyShortcutWait = false;
+    var plunderShortcutWait = false;
+    var destroyShortcutWait = false;
+    var recylcerShortcutWait = false;
+
+    function updateQueryStringParameter(uri, key, value) {
+
+        console.log(uri);
+        console.log(key);
+        console.log(value);
+
+      var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+      var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+      if (uri.match(re)) {
+        return uri.replace(re, '$1' + key + "=" + value + '$2');
+      }
+      else {
+        return uri + separator + key + "=" + value;
+      }
+    }
+
+    function LoadingGalaxyData() {
+        $('.galaxy-content').append('<div style="position:absolute;width:100%;height:100%;background-color:rgba(255,255,255,0.1);text-align:center;line-height:550px;"><i class="fas fa-sync-alt fa-spin" style="font-size: 40px;"></i></div>');
+    }
+
+    var lastGalaxyData_X = 0;
+    var lastGalaxyData_Y = 0;
+
+    function GetGalaxyData() {
+
+        var x = $('#galaxyInput').val();
+        var y = $('#systemInput').val();
+
+        if (x === undefined || x === null || x === '' || x <= 0)
+            x = 1;
+
+        if (y === undefined || y === null || y === '' || y <= 0)
+            y = 1;
+
+        if (lastGalaxyData_X === x && lastGalaxyData_Y === y)
+            return;
+        else {
+            lastGalaxyData_X = x;
+            lastGalaxyData_Y = y;
+        }
+
+        //LoadingGalaxyData();
+
+        $('#galaxyContent').loading(true);
+
+
+        $.ajax({
+            url: '/galaxy/galaxydata?x=' + x + '&y=' + y,
+            type: 'GET',
+            cache:false,
+            success: function (data) {
+                $('#galaxyContent').loading(false);
+                $('.galaxy-content').html(data);
+
+                var newUrl = window.location.href.split('?')[0];
+                newUrl = newUrl + '?x=' + x + '&y=' + y;
+
+                var documentTitle = window.title;
+
+                if (window.history.replaceState) {
+                   //prevents browser from storing history with each change:
+                   window.history.replaceState('', documentTitle, newUrl);
+                }
+            }
+        });
+
+
+    }
+
+    function ShowPhalanx(planetId) {
+        console.log(planetId);
+
+        if (planetId === undefined || planetId === null || planetId === '')
+            return;
+
+        showAjaxModal('/galaxy/sensorReport?planetId=' + planetId, 'Sensor report', 'large', 500);
+    }
+
+    function SendPlunder(planetId,isStrong) {
+
+        if (planetId == undefined || planetId == null) {
+            return;
+        }
+
+        if (isStrong == undefined || isStrong == null) {
+            isStrong = false;
+        }
+
+        if (plunderShortcutWait)
+            return;
+
+        plunderShortcutWait = true;
+
+        var data = {
+            Id: planetId
+        };
+
+            $('#galaxy-container').loading(true);
+            PostRequest('/galaxy/sendplunder', JSON.stringify(data),
+                function (res) {
+                    if (res.IsSuccess) {
+                        $('#galaxy-container').loading(false);
+                        var id = GenerateGuid();
+                        $('#galaxy-container .msg-box').append('<div id="' + id + '" class="msg-item success">' + res.Message + '</div>');
+                        setTimeout(function () {
+                            $('#' + id).fadeOut(1000, function () { $(this).remove(); });
+                        }, 2000);
+                    }
+                    else {
+                        $('#galaxy-container').loading(false);
+                        ShowError(res.Message);
+                        //var id = GenerateGuid();
+                        //$('#galaxy-container .msg-box').append('<div id="' + id + '" class="msg-item fail">' + res.Message + '</div>');
+                        //setTimeout(function () {
+                        //    $('#' + id).fadeOut(1000, function () { $(this).remove(); });
+                        //}, 2000);
+                    }
+                },
+                function () {
+                    $('#galaxy-container').loading(false);
+                    ShowError();
+                });
+
+        setTimeout(function () { plunderShortcutWait = false; }, 500);
+    }
+
+    function SendDestroy(planetId,isStrong) {
+
+        if (planetId == undefined || planetId == null) {
+            return;
+        }
+
+        if (isStrong == undefined || isStrong == null) {
+            isStrong = false;
+        }
+
+        if (destroyShortcutWait)
+            return;
+
+        destroyShortcutWait = true;
+
+        var data = {
+            Id: planetId
+        };
+
+            $('#galaxy-container').loading(true);
+            PostRequest('/galaxy/senddestroy', JSON.stringify(data),
+                function (res) {
+                    if (res.IsSuccess) {
+                        $('#galaxy-container').loading(false);
+                        var id = GenerateGuid();
+                        $('#galaxy-container .msg-box').append('<div id="' + id + '" class="msg-item success">' + res.Message + '</div>');
+                        setTimeout(function () {
+                            $('#' + id).fadeOut(1000, function () { $(this).remove(); });
+                        }, 2000);
+                    }
+                    else {
+                        $('#galaxy-container').loading(false);
+                        ShowError(res.Message);
+                        //var id = GenerateGuid();
+                        //$('#galaxy-container .msg-box').append('<div id="' + id + '" class="msg-item fail">' + res.Message + '</div>');
+                        //setTimeout(function () {
+                        //    $('#' + id).fadeOut(1000, function () { $(this).remove(); });
+                        //}, 2000);
+                    }
+                },
+                function () {
+                    $('#galaxy-container').loading(false);
+                    ShowError();
+                });
+
+        setTimeout(function () { destroyShortcutWait = false; }, 500);
+    }
+
+    function SendSpy(x, y, z, pType,isStrong) {
+
+        if (isStrong == undefined || isStrong == null) {
+            isStrong = false;
+        }
+
+        if (spyShortcutWait)
+            return;
+
+        spyShortcutWait = true;
+
+        var data = {
+            X: x,
+            Y: y,
+            Z: z,
+            PlanetType: pType
+        };
+
+            $('#galaxy-container').loading(true);
+            PostRequest('/galaxy/sendspy', JSON.stringify(data),
+                function (res) {
+                    if (res.IsSuccess) {
+                        $('#galaxy-container').loading(false);
+                        var id = GenerateGuid();
+                        $('#galaxy-container .msg-box').append('<div id="' + id + '" class="msg-item success">' + res.Message + '</div>');
+                        setTimeout(function () {
+                            $('#' + id).fadeOut(1000, function () { $(this).remove(); });
+                        }, 2000);
+                    }
+                    else {
+                        $('#galaxy-container').loading(false);
+                        ShowError(res.Message);
+                        //var id = GenerateGuid();
+                        //$('#galaxy-container .msg-box').append('<div id="' + id + '" class="msg-item fail">' + res.Message + '</div>');
+                        //setTimeout(function () {
+                        //    $('#' + id).fadeOut(1000, function () { $(this).remove(); });
+                        //}, 2000);
+                    }
+                },
+                function () {
+                    $('#galaxy-container').loading(false);
+                    ShowError();
+                });
+
+        setTimeout(function () { spyShortcutWait = false; }, 500);
+    }
+
+    function SendRecyclers(x, y, z) {
+        //console.log('Recyclers sent to >> [' + x + ':' + y + ':' + z + ']');
+
+        if (recylcerShortcutWait)
+            return;
+
+        recylcerShortcutWait = true;
+
+        var data = {
+            X: x,
+            Y: y,
+            Z: z,
+        };
+
+        $('#galaxy-container').loading(true);
+        PostRequest('/galaxy/sendrecyclers', JSON.stringify(data),
+            function (res) {
+                if (res.IsSuccess) {
+                    $('#galaxy-container').loading(false);
+                    var id = GenerateGuid();
+                    $('#galaxy-container .msg-box').append('<div id="' + id + '" class="msg-item success">' + res.Message + '</div>');
+                    setTimeout(function () {
+                        $('#' + id).fadeOut(1000, function () { $(this).remove(); });
+                    }, 2000);
+                }
+                else {
+                    $('#galaxy-container').loading(false);
+                    ShowError(res.Message);
+                    //var id = GenerateGuid();
+                    //$('#galaxy-container .msg-box').append('<div id="' + id + '" class="msg-item fail">' + res.Message + '</div>');
+                    //setTimeout(function () {
+                    //    $('#' + id).fadeOut(1000, function () { $(this).remove(); });
+                    //}, 2000);
+                }
+            },
+            function () {
+                $('#galaxy-container').loading(false);
+                ShowError();
+            });
+
+        setTimeout(function () { recylcerShortcutWait = false; }, 500);
+
+    }
+
+    function SavePlanet(planetId) {
+        console.log(planetId);
+        console.log('Planet Saved.');
+
+        var data = {
+            Id: planetId
+        };
+
+        $('#galaxy-container').loading(true);
+        PostRequest('/galaxy/saveplanet', JSON.stringify(data),
+            function (res) {
+                if (res.IsSuccess) {
+                    $('#galaxy-container').loading(false);
+                    ShowSuccessMessage("The planet has been saved.", null);
+                }
+                else {
+                    $('#galaxy-container').loading(false);
+                    ShowError(res.Message);
+                }
+            },
+            function () {
+                $('#galaxy-container').loading(false);
+                ShowError();
+            });
+
+    }
+
+    $(function () {
+
+        window.localization.missileAttack = "Missile Attack";
+
+        GetGalaxyData();
+
+        $('.galaxy-route .route-input').focusin(function () {
+
+            preventKeyup = true;
+
+            var val = this.value;
+            if (val === '0' || val === 0 || val == '0' || val == 0) {
+                this.value = '';
+            }
+            else {
+                if (/\D/g.test(this.value)) {
+                    // Filter non-digits from input value.
+                    this.value = this.value.replace(/\D/g, '');
+                }
+            }
+
+            this.value = numberWithCommas(this.value);
+        });
+
+        $('.galaxy-route .route-input').focusout(function () {
+
+            preventKeyup = false;
+
+            var val = this.value;
+            if (val === '' || val === ' ' || val == '' || val == ' ') {
+                this.value = 1;
+            }
+            else {
+                if (/\D/g.test(this.value)) {
+                    // Filter non-digits from input value.
+                    this.value = this.value.replace(/\D/g, '');
+                }
+            }
+
+        });
+
+        $('#galaxyInput').on("input", function (e) {
+
+            if (/\D/g.test(this.value)) {
+                // Filter non-digits from input value.
+                this.value = this.value.replace(/\D/g, '');
+            }
+
+            var maxValue = 5;
+            var minValue = 1;
+
+            var intVal = parseInt(this.value);
+            if (!isNaN(intVal)) {
+                intVal = intVal % 10;
+            }
+
+            if (!isNaN(intVal)) {
+                if (intVal < minValue) {
+                    intVal = minValue;
+                }
+                else if (intVal > maxValue) {
+                    intVal = maxValue;
+                }
+
+                this.value = intVal;
+            }
+        });
+
+        $('#systemInput').on("input", function (e) {
+
+            if (/\D/g.test(this.value)) {
+                // Filter non-digits from input value.
+                this.value = this.value.replace(/\D/g, '');
+            }
+
+            var maxValue = 499;
+            var minValue = 1;
+
+            var intVal = parseInt(this.value);
+            if (!isNaN(intVal)) {
+                if (intVal < minValue) {
+                    intVal = minValue;
+                }
+                else if (intVal > maxValue) {
+                    intVal = maxValue;
+                }
+                this.value = intVal;
+            }
+
+
+            if (e.keyCode === 13) {
+                GetGalaxyData();
+            }
+        });
+
+        $('#galaxyInput').on('keyup', function (e) {
+             if (e.keyCode === 13) {
+                GetGalaxyData();
+            }
+        });
+
+        $('#systemInput').on('keyup', function (e) {
+             if (e.keyCode === 13) {
+                GetGalaxyData();
+            }
+        });
+
+        $('.galaxy-route .left-arrow').click(function () {
+
+            if (preventKeyup)
+                return;
+
+            
+
+            preventKeyup = true;
+            setTimeout(function () {
+                preventKeyup = false;
+            }, 300);
+
+            var input = $(this).closest('.route-item').find('.route-input');
+
+            var value = input.val();
+            if (value == undefined || value == null || value === '' || value === ' ') {
+                input.val(1);
+            }
+            else {
+                var intVal = parseInt(value);
+                if (!isNaN(intVal)) {
+                    intVal -= 1;
+                    input.val(intVal);
+                }
+            }
+
+            input.trigger('input');
+
+            GetGalaxyData();
+
+            return false;
+        });
+
+        $('.galaxy-route .right-arrow').click(function () {
+
+            if (preventKeyup)
+                return;
+
+            
+
+            preventKeyup = true;
+            setTimeout(function () {
+                preventKeyup = false;
+            }, 300);
+
+            var input = $(this).closest('.route-item').find('.route-input');
+
+            var value = input.val();
+            if (value == undefined || value == null || value === '' || value === ' ') {
+                input.val(999);
+            }
+            else {
+                var intVal = parseInt(value);
+                if (!isNaN(intVal)) {
+                    intVal += 1;
+                    input.val(intVal);
+                }
+            }
+
+            input.trigger('input');
+
+            GetGalaxyData();
+
+            return false;
+        });
+
+        var preventKeyup = false;
+
+        $("body").keyup(function (e) {
+
+            console.log(e.keyCode);
+
+            if (e.keyCode == 37) {
+                // left
+                $('#btnSystemLeft').click();
+            }
+            else if (e.keyCode == 39) {
+                // right
+                $('#btnSystemRight').click();
+            }
+            else if (e.keyCode == 38) {
+                // up
+                $('#btnGalaxyRight').click();
+            }
+            else if (e.keyCode == 40) {
+                // down
+                $('#btnGalaxyLeft').click();
+            }
+        });
+
+        $('.x-btn-go').click(function () {
+            GetGalaxyData();
+            return false;
+        })
+
+        setInterval(function () {
+            var asteroidObj = $('#galaxy-container .galaxy-info [data-asteroid-disappear]');
+            if (asteroidObj != undefined && asteroidObj != null) {
+
+                var seconds = parseInt(asteroidObj.attr('data-asteroid-disappear'));
+                seconds -= 1;
+                if (seconds <= 0)
+                    seconds = 0;
+
+                asteroidObj.html('(' + ConvertToTimeString(seconds) + ')');
+                asteroidObj.attr('data-asteroid-disappear', seconds);
+            }
+        }, 1000);
+
+
+    //    window.MouseXCoord = 0;
+    //    window.MouseYCoord = 0;
+
+    //    document.onmousemove = handleMouseMove;
+    //function handleMouseMove(event) {
+    //    var eventDoc, doc, body;
+
+    //    event = event || window.event; // IE-ism
+
+    //    // If pageX/Y aren't available and clientX/Y are,
+    //    // calculate pageX/Y - logic taken from jQuery.
+    //    // (This is to support old IE)
+    //    if (event.pageX == null && event.clientX != null) {
+    //        eventDoc = (event.target && event.target.ownerDocument) || document;
+    //        doc = eventDoc.documentElement;
+    //        body = eventDoc.body;
+
+    //        event.pageX = event.clientX +
+    //          (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
+    //          (doc && doc.clientLeft || body && body.clientLeft || 0);
+    //        event.pageY = event.clientY +
+    //          (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
+    //            (doc && doc.clientTop || body && body.clientTop || 0);
+    //    }
+
+
+    //    //console.log(event.pageX + ' - ' + event.pageY);
+
+    //    window.MouseXCoord = event.pageX;
+    //    window.MouseYCoord = event.pageY;
+
+    //    // Use event.pageX / event.pageY here
+    //}
+
+    //    setInterval(function () {
+    //        console.log(window.MouseXCoord + ' - ' + window.MouseYCoord);
+    //    }, 500);
+
+
+
+
+    })
+
+
+
+
+</script>
+</div>
+<div id="planet-selection">
+<span class="planet-info">[23/24] Planets</span>
+<div id="other-planets">
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=e9215b16-b75a-46b5-b7a2-801a4f65122d">
+<img class="planet-icon" src="/assets/images/v2/planet/48/48_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[1:90:15]
+</span>
+</a>
+<a class="moon-select " href="?planet=082546e9-b088-40f4-bfde-8806b121b739" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=0850122b-3b35-4171-bc8d-b956d09920a9">
+<img class="planet-icon" src="/assets/images/v2/planet/47/47_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[1:223:14]
+</span>
+</a>
+<a class="moon-select " href="?planet=95a3b373-1065-4a26-8909-a98bf7ffa0f9" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=ec52409d-e8f5-43a3-a6af-b3d615ac6922">
+<img class="planet-icon" src="/assets/images/v2/planet/51/51_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[1:319:15]
+</span>
+</a>
+<a class="moon-select " href="?planet=13e40d9e-acd8-4249-bf51-ff7b1f87cbd5" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=80ca7d48-dc6d-43f3-9262-695f770d021c">
+<img class="planet-icon" src="/assets/images/v2/planet/14/14_small.jpg?v=4">
+<span class="planet-name">Home planet</span>
+<span class="planet-coords">
+[1:414:4]
+</span>
+</a>
+<a class="moon-select " href="?planet=b3e8f013-d81f-4a34-90c2-b336ce9b2b23" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=0fd8c2d6-658c-4be0-b45b-9968f3e70cce">
+<img class="planet-icon" src="/assets/images/v2/planet/23/23_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[1:415:7]
+</span>
+</a>
+<a class="moon-select " href="?planet=d8a761e5-d750-44d6-b0f1-c9a16291cadd" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=e5ab9f82-398c-48f7-833a-4d6ecc24218a">
+<img class="planet-icon" src="/assets/images/v2/planet/4/4_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[2:80:1]
+</span>
+</a>
+<a class="moon-select " href="?planet=b09458ea-c7d2-4a51-824f-14fa14458324" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=8b794959-4087-4a2a-9f0a-3ae1f456b424">
+<img class="planet-icon" src="/assets/images/v2/planet/19/19_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[2:102:5]
+</span>
+</a>
+<a class="moon-select " href="?planet=1f63e995-fe87-4821-b5ab-b4933a25248a" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=9801ddad-9f93-4af9-bd82-c657f2d95fc6">
+<img class="planet-icon" src="/assets/images/v2/planet/22/22_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[2:102:7]
+</span>
+</a>
+<a class="moon-select " href="?planet=c7fdbebe-a78a-45b5-8786-266714e969ac" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=74209a1f-0c4f-46cd-ab12-cac616817b7b">
+<img class="planet-icon" src="/assets/images/v2/planet/20/20_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[2:201:7]
+</span>
+</a>
+<a class="moon-select " href="?planet=faaa3772-cb0d-45e8-8a66-0588b702402f" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=feec1e65-f5fd-474a-80c0-df78701472ee">
+<img class="planet-icon" src="/assets/images/v2/planet/34/34_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[2:300:9]
+</span>
+</a>
+<a class="moon-select " href="?planet=84e08c0e-0d1e-4d95-a2e7-d5b181c3f997" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=33103df4-9093-45f4-81f1-52987dfa95ff">
+<img class="planet-icon" src="/assets/images/v2/planet/42/42_small.jpg?v=4">
+ <span class="planet-name">Colony</span>
+<span class="planet-coords">
+[2:300:10]
+</span>
+</a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=33333e4f-e744-480d-b3dd-f4c72c101f36">
+<img class="planet-icon" src="/assets/images/v2/planet/44/44_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[2:300:12]
+</span>
+</a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=00bdc403-1b96-4782-a4dc-546eacb18c73">
+<img class="planet-icon" src="/assets/images/v2/planet/50/50_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[2:414:15]
+</span>
+</a>
+</div>
+<div class="planet-item  selected">
+<a class="planet-select " href="?planet=6d9444f1-31f2-4813-b12a-224d869abdb6">
+<img class="planet-icon" src="/assets/images/v2/planet/27/27_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[3:10:9]
+</span>
+</a>
+<a class="moon-select selected" href="?planet=99c17658-c369-4213-8079-e89bd7127dd7" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=f4c57bd1-4730-4f32-8ba5-ee2765b164fc">
+<img class="planet-icon" src="/assets/images/v2/planet/22/22_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[3:222:7]
+</span>
+</a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=c325c385-178d-4810-9ba9-6bd8278a5ff7">
+<img class="planet-icon" src="/assets/images/v2/planet/33/33_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+ [3:320:8]
+</span>
+</a>
+<a class="moon-select " href="?planet=319340d5-df2b-40a9-8367-9d1256d81e3f" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=ba29daa8-19a2-4001-99bb-0dc779474d7c">
+<img class="planet-icon" src="/assets/images/v2/planet/28/28_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[3:427:9]
+</span>
+</a>
+<a class="moon-select " href="?planet=8b9764b1-dd11-4267-92cb-a7d2e6bff04c" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=acc5fa6b-3881-48ba-8f37-268c6b58d7f2">
+<img class="planet-icon" src="/assets/images/v2/planet/42/42_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[4:2:11]
+</span>
+</a>
+<a class="moon-select " href="?planet=2af52d19-770e-4213-8a87-a5f045a5982d" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=de5b4bdd-cb8e-46d2-9b05-92aec6232db2">
+<img class="planet-icon" src="/assets/images/v2/planet/32/32_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[4:10:9]
+</span>
+</a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=2f074f75-0aad-4914-82d5-86519085de11">
+<img class="planet-icon" src="/assets/images/v2/planet/20/20_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[4:127:7]
+</span>
+</a>
+<a class="moon-select " href="?planet=474cf385-ae36-4e3f-bb65-c526d907d390" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=687cc926-a9e7-4409-849a-8b771fc7652a">
+<img class="planet-icon" src="/assets/images/v2/planet/28/28_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[4:232:8]
+</span>
+</a>
+<a class="moon-select " href="?planet=e72080fd-8837-43fd-a004-0af65192a1f6" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=d0344ad5-2137-4104-922d-c8facc2f05d9">
+<img class="planet-icon" src="/assets/images/v2/planet/40/40_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[5:367:11]
+</span>
+</a>
+<a class="moon-select " href="?planet=e93f7b6f-856f-4721-bef2-4345a4bf6771" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+<div class="planet-item  ">
+<a class="planet-select " href="?planet=43fd62fa-ca04-4e3d-8347-ea32d34e7081">
+<img class="planet-icon" src="/assets/images/v2/planet/39/39_small.jpg?v=4">
+<span class="planet-name">Colony</span>
+<span class="planet-coords">
+[5:495:12]
+</span>
+</a>
+<a class="moon-select " href="?planet=f0b7f4b1-3efb-4de2-9c02-19b934f02644" style="background:url(../../assets/images/V2/planet/moon/1/1_small.jpg?v=4) no-repeat;background-size:cover !important;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer"></div>
+
+<div class="modal micromodal-slide" id="ajax-modal" aria-hidden="true">
+<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+<div class="modal__container modal__medium" id="ajax-modal-container" role="dialog" aria-modal="true" aria-labelledby="ajax-modal-title">
+<header class="modal__header">
+<h2 class="modal__title" id="ajax-modal-title"></h2>
+<button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+</header>
+<main class="modal__content" id="ajax-modal-content">
+</main>
+</div>
+</div>
+</div>
+
+
+<div class="modal micromodal-slide" id="ajax-chat-modal" aria-hidden="true">
+<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+<div class="modal__container modal__chat" id="ajax-chat-modal-container" role="dialog" aria-modal="true" aria-labelledby="ajax-modal-title">
+<header class="modal__header">
+<h2 class="modal__title" id="ajax-chat-modal-title"></h2>
+<button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+</header>
+<main class="modal__content" id="ajax-chat-modal-content">
+</main>
+</div>
+</div>
+</div>
+
+
+<div class="modal micromodal-slide" id="iframe-modal" aria-hidden="true">
+<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+<div class="modal__container modal__medium" id="iframe-modal-container" role="dialog" aria-modal="true" aria-labelledby="iframe-modal-title">
+<header class="modal__header">
+<h2 class="modal__title" id="iframe-modal-title"></h2>
+<button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+</header>
+<main class="modal__content" id="iframe-modal-content">
+</main>
+</div>
+</div>
+</div>
+
+<div class="modal micromodal-slide" id="ajax-playerfriendcreate-modal" aria-hidden="true">
+<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+<div class="modal__container modal__chat" id="ajax-playerfriendcreate-modal-container" role="dialog" aria-modal="true" aria-labelledby="ajax-modal-title">
+<header class="modal__header">
+<h2 class="modal__title" id="ajax-playerfriendcreate-modal-title"></h2>
+<button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+</header>
+<main class="modal__content" id="ajax-playerfriendcreate-modal-content">
+</main>
+</div>
+</div>
+</div>
+
+
+<div id="BackGroundFreezerPreloader" class="BackGroundFreezer" align="center">
+<div class="loader">
+</div>
+</div>
+<script>
+
+        var _fleetReturnCounterInterval = null;
+
+        function ReloadPage() {
+            if (!window.location.hash) {
+                window.location.href = window.location.href;
+            } else {
+                window.location.reload();
+            }
+        }
+
+        function ReportChatMessage(msgId,isUniverseMessage) {
+
+            var data = {
+                Id: msgId
+            };
+
+            if (isUniverseMessage != undefined && isUniverseMessage != null && isUniverseMessage === true) {
+                PostRequest('/chat/reportuniversalmessage', JSON.stringify(data),
+                function (res) {
+                    if (res.IsSuccess) {
+                        ShowSuccessMessage(`Your report has been sent to administration for review.`);
+                    }
+                    else {
+                        ShowError(res.Message);
+                    }
+                },
+                function () {
+                    ShowError();
+                });
+            }
+            else {
+                PostRequest('/chat/reportmessage', JSON.stringify(data),
+                function (res) {
+                    if (res.IsSuccess) {
+                        ShowSuccessMessage(`Your report has been sent to administration for review.`);
+                    }
+                    else {
+                        ShowError(res.Message);
+                    }
+                },
+                function () {
+                    ShowError();
+                });
+            }
+        }
+
+        function ShowError(contentHtml) {
+            var defaultMsg = `An unexpected error occurred.`;
+            var errorMsg = '';
+            if (contentHtml === undefined || contentHtml == null || contentHtml === '') {
+                errorMsg = defaultMsg;
+            }
+            else
+                errorMsg = contentHtml;
+
+            Swal.fire({
+                type: 'error',
+                title: `Error`,
+                html: `<div style="font-size:12px;">`+errorMsg+`</div>`,
+                footer: '',
+                onBeforeOpen: function (ele) {
+                    console.log($(ele));
+                    $(ele).addClass('swal2-modal-error');
+                }
+            });
+        }
+
+        function ShowNotEnoughDM() {
+            var message = `Not enough Dark Matter available!</br> Do you want to buy some now?`;
+
+            Swal.fire({
+                title: 'Error',
+                html: '<span style="font-size: 12px; ">' + message + '</span>',
+                type: 'error',
+                showCancelButton: true,
+                buttonStyling: false,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes',
+                cancelButtonText: 'No',
+                onBeforeOpen: function (ele) {
+                    console.log($(ele));
+                    $(ele).addClass('swal2-modal-error');
+                }
+            }).then(function(result){
+                if (result.value) {
+                    window.location.href = '/darkmatter/purchase';
+                }
+            })
+        }
+
+        function ShowSuccessMessage(message, callback) {
+            Swal.fire({
+                title: `Success`,
+                html: `<span style="font-size:12px;">${message}</span>`,
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Ok',
+                onBeforeOpen: function (ele) {
+                    console.log($(ele));
+                    $(ele).addClass('swal2-modal-success');
+                }
+            }).then((result) => {
+                if (result.value) {
+                    if (callback != undefined && callback != null) {
+                        callback();
+                    }
+                }
+            });
+        }
+
+        window.isConnectedChatWs = false;
+
+        function ConnectChatWS() {
+            if (window.isConnectedChatWs)
+                return;
+
+            var hub = $.connection.wSHub;
+
+            hub.client.newChatMessage = function (dataJson) {
+                var data = JSON.parse(dataJson);
+                console.log(data);
+
+                data.MessageContent = Emojify(data.MessageContent);
+
+                if (data.IsAllianceChat === true) {
+                    var allianceChatMessagesContainer = $('#alliance_chat_messages');
+                    if (allianceChatMessagesContainer.length > 0) {
+                        var msgDateObj = new Date(data.MessageDate);
+
+                        allianceChatMessagesContainer.append('<div class="message-item"><span class="msg-sender">' + data.FromPlayerName + '</span><span class="msg-date">' + FormatDate(msgDateObj) + '</span><span class="msg-arrow"></span><div class="msg-content">' + data.MessageContent + '</div></div>');
+
+                       allianceChatMessagesContainer.animate({ scrollTop: allianceChatMessagesContainer.prop("scrollHeight")}, 1000);
+                    }
+                }
+                else {
+                    var playerChatMessagesContainer = $('#player_chat_messages_' + data.FromPlayerId);
+                    if (playerChatMessagesContainer.length > 0) {
+
+                        var msgDateObj = new Date(data.MessageDate);
+
+                        playerChatMessagesContainer.append('<div class="message-item"><span class="msg-sender">' + data.FromPlayerName + '</span><span class="msg-date">' + FormatDate(msgDateObj) + '</span><span class="msg-arrow"></span><div class="msg-content">' + data.MessageContent + '</div></div>');
+
+                       playerChatMessagesContainer.animate({ scrollTop: playerChatMessagesContainer.prop("scrollHeight")}, 1000);
+
+                    }
+                }
+
+            };
+
+            $.connection.hub.start();
+            window.isConnectedChatWs = true;
+        }
+
+        
+
+        $(function () {
+
+            window.fleetDetailTableOpened = false;
+
+            var currentMissionRemainingSeconds = 57;
+
+            setInterval(function () {
+                currentMissionRemainingSeconds -= 1;
+                $('#NextMissionRemainingTime').html(ConvertToTimeString(currentMissionRemainingSeconds));
+            }, 1000);
+
+
+            $('#fleet-movement-detail-btn').click(function () {
+
+                if (window.fleetDetailTableOpened === true) {
+                    $('#layoutFleetMovements').toggleClass('opened');
+                }
+                else {
+
+                    $('#header .fleet-info-section').loading(true);
+
+                    $.ajax({
+                        url: '/home/fleetmovementlist',
+                        type: 'GET',
+                        cache:false,
+                        success: function (data) {
+                            window.fleetDetailTableOpened = true;
+
+                            $('#fleet-movement-content').html(data);
+
+                            ConfigureModals();
+                            ConfigureTooltips();
+
+                            $('#layoutFleetMovements').toggleClass('opened');
+
+                            $('#header .fleet-info-section').loading(false);
+                        }
+                    });
+                }
+
+                return false;
+            })
+
+        });
+
+
+        
+
+
+    </script>
+
+</body></html>
