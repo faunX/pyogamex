@@ -1,5 +1,5 @@
 # OgameX Automation Project 
-### This is a project to automate the browser game OgameX
+### This is a project developed mostly in Python to automate the game called OgameX which is a browser real time game.
 
 ### Features:
 
