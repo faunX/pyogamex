@@ -1,10 +1,7 @@
 # ogamex
 ### This is a project to automate the browser game OgameX
----
-
 
 ### Features:
----
 
 - ####Expedition BOT: 
 
