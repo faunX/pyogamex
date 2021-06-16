@@ -37,4 +37,4 @@
 
 ---
 
-2. ## Dark Matter farmer
+2. ## Coordinates finder
