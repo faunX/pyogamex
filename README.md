@@ -1,4 +1,4 @@
-# ogamex
+# OgameX Automation Project 
 ### This is a project to automate the browser game OgameX
 
 ### Features:
