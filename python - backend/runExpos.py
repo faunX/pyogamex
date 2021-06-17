@@ -25,6 +25,6 @@ time.sleep(1)
 
 allLinksShips = driver.find_element_by_tag_name("a")
 i = 0
-while i < len(allLinksShips):
+while i < 20:
     print(allLinksShips[i])
     i = i+1

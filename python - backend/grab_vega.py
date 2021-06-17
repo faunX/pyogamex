@@ -1,20 +1,34 @@
 #!/usr/bin/env python3
 
-import random
-import time
-
-import pandas as pd
-from bs4 import BeautifulSoup
-from pyvirtualdisplay import Display
+from pandas import DataFrame
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.remote.webelement import WebElement
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.select import Select
+from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import StaleElementReferenceException
+from selenium.webdriver.support import expected_conditions
+import requests
+import time
+import random
+from selenium import webdriver
+import platform
+from selenium.webdriver.chrome.options import Options
+from bs4 import BeautifulSoup
+import pandas as pd
+import datetime
+import decimal
+from pyvirtualdisplay import Display
 
 display = Display(visible=0, size=(1024, 768))
 display.start()
 if __name__ == "__main__":
     path = ""
 
-    email = ("ramipadro93@gmail.com")
+    email = ("ramiropadrog@gmail.com")
     password = ("rami38050222")
 
     options = webdriver.ChromeOptions()
