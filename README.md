@@ -37,4 +37,20 @@
 
 ---
 
-2. ## Coordinates finder
+2. ## Coordinates finder:
+
+### Requirements: 
+
+- #### Linux
+- #### Python v3
+- #### Python packages: 
+  `sudo pip3 install pandas selenium beautifulsoup4 requests pyvirtualdisplay xvfbwrapper chromedriver`
+- #### Firebase account 
+
+### Configuration of script: 
+
+- Define variables:
+  - **email**: Enter your email
+  - **password**: Enter your password
+
+---
