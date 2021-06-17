@@ -50,17 +50,15 @@ if __name__ == "__main__":
     driver.get("https://vega.ogamex.net/galaxy")
 #    driver.get("https://beta.ogamex.net/galaxy")
     time.sleep(1)
+
     moon_data = []
     player = []
     planet_no = []
     galaxy = []
     system = []
     aliance = []
-    moon_time = []
     planet_time = []
     timestamp = []
-    alliance = []
-    ranking = []
     s = []
     text_file = open("debug", "w")
     text_file.write(driver.page_source)
@@ -127,14 +125,6 @@ if __name__ == "__main__":
                 # Extract & Save Moon Details
                 div1 = moon[k].find('div')
                 if div1:
-                    div2 = div1.find('div')
-                    if div2:
-                        if div2.get_text():
-                            moon_time.append(div2.get_text())
-                        else:
-                            moon_time.append("Playing Now")
-                    else:
-                        moon_time.append("Offline")
                     moon_data.append("Yes")
                 else:
                     moon_data.append("No")
