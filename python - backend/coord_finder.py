@@ -36,6 +36,7 @@ display.start()
 if __name__ == "__main__":
 	path = ""
 
+	#login
 	options = webdriver.ChromeOptions()
 	options.add_argument('--no-sandbox')
 	driver = webdriver.Chrome(options=options)
@@ -50,6 +51,9 @@ if __name__ == "__main__":
 	element = driver.find_element_by_id("btnLogin")
 	element.click()
 	time.sleep(2)
+	#end login
+
+
 	driver.get("https://ogamex.net/connect?serverId=" + constants.VEGA_ID) #vega
 	driver.get("https://vega.ogamex.net/galaxy")
 	time.sleep(1)
@@ -95,15 +99,15 @@ if __name__ == "__main__":
 				if r:
 					r = BeautifulSoup(r, 'html.parser')
 					r = r.find('a', class_="galaxy-shortcut-action")
-					rankCompare = int(r.get_text())
+					rankCompare = int(r.get_text().replace(".",""))
 				
 				
-				if rankCompare <= 20 and rankCompare >= 1:					
+				if rankCompare <= 20 and rankCompare >= 1:
 					if info[k].find('span').get_text() != "":
 						print("")
 						print("Galaxy: " + str(i) + " - System: " + str(j) + " - Position: " + planet[k].find('span').get_text())
-						print(f"Mapping took {secs} seconds")
-						db.collection('player_coords').add({'player_name':info[k].find('span').get_text(), 
+						today = datetime.date.today()
+						db.collection('player_coords_' + str(today)).add({'player_name':info[k].find('span').get_text(), 
 						'galaxy_number':i, 
 						'system_number':j, 
 						'position_number': planet[k].find('span').get_text()})
