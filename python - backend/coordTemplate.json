@@ -1,0 +1,32 @@
+{
+	"coords": [
+		{
+			"municipalidad": [
+				{
+					"titulo":1,
+					"imagen":1,
+					"texto":1
+				},
+				{
+					"galaxy":2,
+					"system":2,
+					"position":2
+				}
+			] 
+		},
+		{
+			"name2": [
+				{
+					"galaxy":3,
+					"system":3,
+					"position":3
+				},
+				{
+					"galaxy":4,
+					"system":4,
+					"position":4
+				}
+			] 
+		}
+	]
+}
