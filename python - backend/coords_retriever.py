@@ -14,71 +14,74 @@ db = firestore.client()
 
 docs = db.collection('player_coords_2021-06-17').order_by("player_name").stream()
 
+
 app = Flask(__name__)
-@app.route("/")
-def get_coords():
+@app.route("/api/v1/get_all_coords")
+def get_coords_api():
 	docs = db.collection('player_coords_2021-06-17').order_by("player_name").stream()
+	listNames = []
+	for doc in docs:
+		playerName = doc.get("player_name")
+		listNames.append(playerName)
+
+
+	uniqueListNames = uniqueListF(listNames)
+	print(uniqueListNames)
+
+	coordsFinal = []
+	for name in uniqueListNames:
+		coordsPlayer = get_coords_by_name_private(name)
+		coordsPerPlayer = {
+			name : coordsPlayer
+		}
+		coordsFinal.append(coordsPerPlayer)
+
+	result = jsonify(coordsFinal)
+	return result
+
+
+@app.route("/api/v1/get_coords_by_name/<name>")
+def get_coords_by_name_api(name):
+	docs = db.collection('player_coords_2021-06-17').where("player_name","==",name).stream()
 	listCoords = []
 	for doc in docs:
 		coords = {
-			"name": doc.get("player_name"),
+			"galaxy": doc.get("galaxy_number"),
+			"system": doc.get("system_number"),
+			"position": doc.get("position_number")
+		}
+		listCoords.append(coords)
+
+	result = jsonify(listCoords)
+	return result
+
+
+def get_coords_by_name_private(name):
+	docs = db.collection('player_coords_2021-06-17').where("player_name","==",name).stream()
+	listCoords = []
+	for doc in docs:
+		coords = {
 			"galaxy": doc.get("galaxy_number"),
 			"system": doc.get("system_number"),
 			"position": doc.get("position_number")
 		}
 
 		listCoords.append(coords)
-	return json.dumps(listCoords)
 
 
-'''
-coordsObject = {}
-coordsAllPlayers = []
-coordsPerPlayer = []
+	return listCoords
 
-listCoords = []		
+def uniqueListF(list):
+ 
+	# intilize a null list
+	unique_list = []
 
-result = json(algo)	
+	# traverse for all elements
+	for x in list:
+		# check if exists in unique_list or not
+		if x not in unique_list:
+			unique_list.append(x)
 
-for doc in docs:
-	coordsO = {
-		"name": doc.get("player_name"),
-		"galaxy": doc.get("galaxy_number"),
-		"system": doc.get("system_number"),
-		"position": doc.get("position_number")
-	}
-
-	listCoords.append(coordsO)	
-
-listCoords = sorted(listCoords, key = lambda k: k['name'])
-
-#jsonCoords = json.dumps(listCoords)
-#print(jsonCoords)
-
-for coord in listCoords:
-	name = coord["name"]
-	galaxy = coord["galaxy"],
-	system = coord["system"],
-	position = coord["position"]
-
-	coordPlayer = {
-		name: name,
-		galaxy: galaxy,
-		system: system,
-		position: position
-	}
-
-	for coordPlayer in coordsPlayer:
-		coordsPlayer = {
-			"galaxy": coord["galaxy"],
-			"system": coord["system"],
-			"position": coord["position"]
-		}
-
-
-	print("coordsO")
-	print(coordsPlayerO)
-'''
-
+	return unique_list
 
 
