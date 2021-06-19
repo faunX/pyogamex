@@ -6,6 +6,7 @@ import constants
 from flask import Flask, jsonify
 import json 
 from typing import List
+from flask_cors import CORS
 
 cred  = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
@@ -16,6 +17,13 @@ docs = db.collection('player_coords_2021-06-17').order_by("player_name").stream(
 
 
 app = Flask(__name__)
+CORS(app)
+cors = CORS(app, resouce = {
+	r"/*":{
+		"origins":"*"
+	}
+})
+
 @app.route("/api/v1/get_all_coords")
 def get_coords_api():
 	docs = db.collection('player_coords_2021-06-17').order_by("player_name").stream()
