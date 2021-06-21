@@ -3,8 +3,10 @@ import time
 import webbrowser
 
 timesExecute = 4
-timePerRefresh = 1800
+timePerRefresh = random.randint(60, 1000)
 
+#vega
+'''
 planets = ['https://vega.ogamex.net/home?planet=e9215b16-b75a-46b5-b7a2-801a4f65122d',
            'https://vega.ogamex.net/home?planet=0850122b-3b35-4171-bc8d-b956d09920a9',
            'https://vega.ogamex.net/home?planet=ec52409d-e8f5-43a3-a6af-b3d615ac6922',
@@ -26,7 +28,27 @@ planets = ['https://vega.ogamex.net/home?planet=e9215b16-b75a-46b5-b7a2-801a4f65
            'https://vega.ogamex.net/home?planet=2f074f75-0aad-4914-82d5-86519085de11',
            'https://vega.ogamex.net/home?planet=687cc926-a9e7-4409-849a-8b771fc7652a',
            'https://vega.ogamex.net/home?planet=43fd62fa-ca04-4e3d-8347-ea32d34e7081']
+'''
 
+#nova
+
+planets = [ 'https://nova.ogamex.net/home?planet=91bdcc46-869e-481a-811a-34d444f00af0',
+            'https://nova.ogamex.net/home?planet=b7e03be0-a7d7-40fb-82c2-4b3037b91e5c',
+            'https://nova.ogamex.net/home?planet=7945b5f4-3e58-461b-b287-846e7a7ec5ba',
+            'https://nova.ogamex.net/home?planet=64e5d7a3-5bd3-4f52-91a8-164f5d3f2ced',
+            'https://nova.ogamex.net/home?planet=b9deb695-e976-474b-904e-aafdf68dfb4e',
+            'https://nova.ogamex.net/home?planet=013a8e31-9807-4a69-9905-624740dd89fd',
+            'https://nova.ogamex.net/home?planet=289c1c69-5388-477e-a4ab-f2f7965c32b4',
+            'https://nova.ogamex.net/home?planet=c219ec16-e21f-41ae-933a-9f2b8c6a4858',
+            'https://nova.ogamex.net/home?planet=3999b1e8-191d-4944-a698-d3dd5a2af627',
+            'https://nova.ogamex.net/home?planet=7e9ecb31-86fe-4f89-b421-e219e62bdd56',
+            'https://nova.ogamex.net/home?planet=971c7495-9a4a-4bfa-b5b2-3adfa0251418',
+            'https://nova.ogamex.net/home?planet=042596df-035e-4600-9dcc-d370a5b8d4dc',
+            'https://nova.ogamex.net/home?planet=4501acfc-1ff3-4021-8591-eaf5cef368c5',
+            'https://nova.ogamex.net/home?planet=4d80d7b1-1ce1-463a-bdc2-001498605f1c',
+            'https://nova.ogamex.net/home?planet=666351a5-1c54-4b1d-b341-5e39ec71671d']
+
+'''
 moons = ['https://vega.ogamex.net/home?planet=082546e9-b088-40f4-bfde-8806b121b739',
          'https://vega.ogamex.net/home?planet=95a3b373-1065-4a26-8909-a98bf7ffa0f9',
          'https://vega.ogamex.net/home?planet=13e40d9e-acd8-4249-bf51-ff7b1f87cbd5',
@@ -43,6 +65,10 @@ moons = ['https://vega.ogamex.net/home?planet=082546e9-b088-40f4-bfde-8806b121b7
          'https://vega.ogamex.net/home?planet=e72080fd-8837-43fd-a004-0af65192a1f6',
          'https://vega.ogamex.net/home?planet=f0b7f4b1-3efb-4de2-9c02-19b934f02644']
 
+'''
+
+moons = [   'https://nova.ogamex.net/home?planet=c1c0185c-2342-47a7-8cda-e64d831e9f8d',
+            'https://nova.ogamex.net/home?planet=d1bec4a4-e021-449a-97c6-30c8bf672ed2']
 
 def openMoons():
     lengthMoons = len(moons)
