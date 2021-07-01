@@ -13,9 +13,9 @@ firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
-docs = db.collection('player_coords_2021-06-17').order_by("player_name").stream()
+docs = db.collection('player_coords_2021-06-30').order_by("player_name").stream()
 
-
+#app = Flask("coords_retriever.py")
 app = Flask(__name__)
 CORS(app)
 cors = CORS(app, resouce = {
@@ -50,7 +50,10 @@ def get_coords_api():
 
 @app.route("/api/v1/get_coords_by_name/<name>")
 def get_coords_by_name_api(name):
-	docs = db.collection('player_coords_2021-06-17').where("player_name","==",name).stream()
+	name2 = name.replace("%20", " ")
+	print(name)
+	print(name2)
+	docs = db.collection('player_coords_2021-06-17').where("player_name","==",name2).stream()
 	listCoords = []
 	for doc in docs:
 		coords = {

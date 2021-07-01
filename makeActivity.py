@@ -73,7 +73,7 @@ moons = [   'https://nova.ogamex.net/home?planet=c1c0185c-2342-47a7-8cda-e64d831
 def openMoons():
     lengthMoons = len(moons)
     counter = 0
-    while counter < timesExecute:
+    while counter < lengthMoons:
         position = random.randint(0, lengthMoons - 1)
         webbrowser.open(moons[position])
         counter = counter + 1
