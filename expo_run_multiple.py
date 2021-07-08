@@ -58,6 +58,8 @@ if __name__ == "__main__":
 	i = 0
 	while i < 100:
 		try:
+			secs = random.randint(50, 70)
+			secsBetween = random.randint(2400, 3000)
 			driver.get("https://vega.ogamex.net/fleet/autoexpedition")
 
 			print(driver.current_url)
@@ -75,10 +77,10 @@ if __name__ == "__main__":
 			btnSend = driver.find_element_by_id("btnSend")
 			btnSend.click()
 
-			time.sleep(3)
+			time.sleep(secs)
 			print(i)
 			i = i+1
-			time.sleep(3600)
+			time.sleep(secsBetween)
 		except Exception as e:
 			print(e)
 			time.sleep(900)
