@@ -48,8 +48,8 @@ if __name__ == "__main__":
 	time.sleep(2)
 
 	#filling variables
-	driver.get("https://ogamex.net/connect?serverId=2f965194-a236-41b9-8807-6bcc8e6aa734")
-	driver.get("https://vega.ogamex.net/fleet")
+	driver.get("https://ogamex.net/connect?serverId=4c0057df-6571-4089-818d-e6d8ca1bd992") #nova
+	driver.get("https://nova.ogamex.net/fleet")
 
 	time.sleep(1)
 

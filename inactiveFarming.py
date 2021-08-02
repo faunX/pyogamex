@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from pandas import DataFrame
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -29,6 +27,7 @@ if __name__ == "__main__":
 	path = ""
 
 	email = ("ramiropadrog@gmail.com")
+
 	password = ("rami38050222")
 
 	options = webdriver.ChromeOptions()
@@ -47,42 +46,50 @@ if __name__ == "__main__":
 	time.sleep(2)
 
 	#filling variables
+
 	driver.get("https://ogamex.net/connect?serverId=4c0057df-6571-4089-818d-e6d8ca1bd992") #nova
+	driver.get("https://nova.ogamex.net/galaxy?x=1&y=350")
 
 	time.sleep(1)
-	
-	#expo bot
-	i = 0
-	while i < 100:
-		try:
-			secs = random.randint(50, 70)
-			secsBetween = random.randint(2400, 3000)
-			driver.get("https://nova.ogamex.net/fleet/autoexpedition")
 
-			print(driver.current_url)
+	gal = driver.find_element_by_id("galaxyInput")
+	valu = driver.find_element_by_id("systemInput")
+	secs = (float(random.randint(50, 70))/40)
 
-			unitContainer = driver.find_element_by_class_name("unit-container")
-			divFalcons = unitContainer.find_element_by_xpath("//div[@data-ship-type='LIGHT_CARGO']")
-			allFalconsButton = divFalcons.find_element_by_class_name("btn-unit-full")
-			allFalconsName = divFalcons.find_element_by_class_name("unit-title")
+	for j in range(385,500):
+		secs = (float(random.randint(50, 70))/40)
+		valu.send_keys(Keys.BACKSPACE)
+		valu.send_keys(Keys.BACKSPACE)
+		valu.send_keys(Keys.BACKSPACE)
 
-			allFalconsButton.click()
+		time.sleep(secs)
 
-			print(allFalconsName)
+		valu.send_keys(j) #setting system_number in input
+		valu.send_keys(Keys.ENTER) #select next system
 
-			btnSend = driver.find_element_by_id("btnSend")
-			btnSend.click()
+		time.sleep(2)
+		inactives = driver.find_elements_by_class_name("filterInactive") #each inactive is a row
+		for inactive in inactives:
+			fleetInfoSection = driver.find_element_by_class_name("fleet-info-section")
+			fleetsFlying = fleetInfoSection.find_element_by_tag_name("b")
+			coords = inactive.find_element_by_class_name("planet-index").text
+			print("fleets flying: " + fleetsFlying.text)
 
-			print(i)
-			i = i+1
-			time.sleep(secsBetween)
-		except Exception as e:
-			print(e)
-			time.sleep(900)
-			continue
+			if fleetsFlying.text == "45":
+				break
+			time.sleep(1)
+			btnPlunder = inactive.find_element_by_class_name("btnActionSpy") 
+			btnPlunder.click()
+			print("fleet sent")
+			print("coords: " + str(j) + " - " + coords)
 
-
-
-		    		
 		
-		
+			
+		#for inactive in inactives:
+		#	print(inactive.text)
+			#plunderBtn = inactive.find_element_by_class_name("btnActionPlunder tooltip") #plunder each inactive
+			#plunderBtn.click()
+		#print("galaxy: " + str(1) + " - system: " + str(j))
+		#print(inactives.text)	
+	driver.quit()
+	display.stop()

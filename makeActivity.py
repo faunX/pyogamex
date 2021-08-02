@@ -2,8 +2,8 @@ import random
 import time
 import webbrowser
 
-timesExecute = 4
-timePerRefresh = random.randint(60, 1000)
+timesExecute = 15
+timePerRefresh = random.randint(600, 1000)
 
 #vega
 '''
@@ -31,7 +31,7 @@ planets = ['https://vega.ogamex.net/home?planet=e9215b16-b75a-46b5-b7a2-801a4f65
 '''
 
 #nova
-
+'''
 planets = [ 'https://nova.ogamex.net/home?planet=91bdcc46-869e-481a-811a-34d444f00af0',
             'https://nova.ogamex.net/home?planet=b7e03be0-a7d7-40fb-82c2-4b3037b91e5c',
             'https://nova.ogamex.net/home?planet=7945b5f4-3e58-461b-b287-846e7a7ec5ba',
@@ -47,7 +47,7 @@ planets = [ 'https://nova.ogamex.net/home?planet=91bdcc46-869e-481a-811a-34d444f
             'https://nova.ogamex.net/home?planet=4501acfc-1ff3-4021-8591-eaf5cef368c5',
             'https://nova.ogamex.net/home?planet=4d80d7b1-1ce1-463a-bdc2-001498605f1c',
             'https://nova.ogamex.net/home?planet=666351a5-1c54-4b1d-b341-5e39ec71671d']
-
+'''
 '''
 moons = ['https://vega.ogamex.net/home?planet=082546e9-b088-40f4-bfde-8806b121b739',
          'https://vega.ogamex.net/home?planet=95a3b373-1065-4a26-8909-a98bf7ffa0f9',
@@ -66,9 +66,36 @@ moons = ['https://vega.ogamex.net/home?planet=082546e9-b088-40f4-bfde-8806b121b7
          'https://vega.ogamex.net/home?planet=f0b7f4b1-3efb-4de2-9c02-19b934f02644']
 
 '''
-
+'''
 moons = [   'https://nova.ogamex.net/home?planet=c1c0185c-2342-47a7-8cda-e64d831e9f8d',
             'https://nova.ogamex.net/home?planet=d1bec4a4-e021-449a-97c6-30c8bf672ed2']
+'''
+
+moons = [   "https://titan.ogamex.net/home?planet=22e51bd8-826b-48d4-ba64-cad1b74671a9",
+            "https://titan.ogamex.net/home?planet=e7958abb-a551-452a-a05f-c58ee875e54b",
+            "https://titan.ogamex.net/home?planet=9422f494-6799-4998-b453-2b55ad1aa593",
+            "https://titan.ogamex.net/home?planet=d9e037db-f45f-49fe-b9e1-950711b0a342",
+            "https://titan.ogamex.net/home?planet=f295c051-6d17-4fe6-8e50-f8f570744770",
+            "https://titan.ogamex.net/home?planet=6745ada1-e1d4-41cf-a0b9-87f30e14e517",
+            "https://titan.ogamex.net/home?planet=0988000e-e306-4437-bc4b-9be8c26c6133",
+            "https://titan.ogamex.net/home?planet=c918c814-effc-46ba-8da3-e4526142c7f4",
+            "https://titan.ogamex.net/home?planet=26dc291c-baaf-43ac-857d-b3508d4ad921",
+            "https://titan.ogamex.net/home?planet=0d64fc88-657a-4d35-8c17-6101ba404707",
+            "https://titan.ogamex.net/home?planet=f7571a62-ba6b-4d60-9f52-79c4d95a25c5",
+            "https://titan.ogamex.net/home?planet=e04fdaa6-bf6b-4efc-a499-386498f71f0b",
+            "https://titan.ogamex.net/home?planet=7e673da7-d6f6-488f-b8cd-d603d4f9bcad",
+            "https://titan.ogamex.net/home?planet=205b762d-5e95-474d-8375-67232001dff8",
+            "https://titan.ogamex.net/home?planet=8bd0ddc5-51a2-4f8b-b729-59122dac21db",
+            "https://titan.ogamex.net/home?planet=1b0a8055-1553-40e3-8621-ac270de28aed",
+            "https://titan.ogamex.net/home?planet=9a1d0800-a0fc-478b-8394-24fb07eb16eb",
+            "https://titan.ogamex.net/home?planet=6e04f8ce-0ab6-45c2-9f65-feadd67b6855",
+            "https://titan.ogamex.net/home?planet=995ad0a4-d6db-4a0c-950d-f93257fa8483",
+            "https://titan.ogamex.net/home?planet=decf5b09-ddae-447c-bba9-592bd2851104",
+            "https://titan.ogamex.net/home?planet=eb230c60-5f19-4118-b8cb-282b16ac14c0",
+            "https://titan.ogamex.net/home?planet=ed60c6da-20f6-48fb-a649-150d50d813f3",
+            "https://titan.ogamex.net/home?planet=90dc3740-c9fd-4f7a-a14e-111a80ac9d20",
+            "https://titan.ogamex.net/home?planet=4caedd83-0b06-4ede-9ab9-5af52987d7bb",
+            "https://titan.ogamex.net/home?planet=28fb04bf-484b-48e4-9dee-e0e8ff821cd1"]
 
 def openMoons():
     lengthMoons = len(moons)
@@ -78,19 +105,10 @@ def openMoons():
         webbrowser.open(moons[position])
         counter = counter + 1
 
-def openPlanets():
-    lengthPlanets = len(planets)
-    counter = 0
-    while counter < timesExecute:
-        position = random.randint(0, lengthPlanets - 1)
-        webbrowser.open(planets[position])
-        counter = counter + 1
-
 i = 1
 
 while i < 100:
     openMoons()
-    openPlanets()
 
     time.sleep(timePerRefresh)
     i = i + 1

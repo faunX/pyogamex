@@ -58,9 +58,6 @@ if __name__ == "__main__":
 	driver.get("https://vega.ogamex.net/galaxy")
 	time.sleep(1)
 
-	#text_file = open("debug", "w")
-	#text_file.write(driver.page_source)
-	#text_file.close()
 	gal = driver.find_element_by_id("galaxyInput")
 	valu = driver.find_element_by_id("systemInput")
 	secs = (float(random.randint(50, 70))/50)
