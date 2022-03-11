@@ -48,7 +48,7 @@ if __name__ == "__main__":
 	#filling variables
 
 	driver.get("https://ogamex.net/connect?serverId=4c0057df-6571-4089-818d-e6d8ca1bd992") #nova
-	driver.get("https://nova.ogamex.net/galaxy?x=1&y=350")
+	driver.get("https://nova.ogamex.net/galaxy?x=2&y=1")
 
 	time.sleep(1)
 
@@ -65,8 +65,12 @@ if __name__ == "__main__":
 
 		time.sleep(2)
 		slots = driver.find_elements_by_class_name("galaxy-item") #each inactive is a row
-		if len(slots) >= 18: 
-			print("coords: 1 - " + str(j))
+		slotsLen = len(slots)
+		if len(slots) >= 18:
+			asteroidPosition = slots[slotsLen - 1]
+			asteroidDivs = asteroidPosition.find_elements_by_tag_name('div')
+			if len(asteroidDivs) <= 3:
+				print("coords: 1 - " + str(j))
 
 	driver.quit()
 	display.stop()
